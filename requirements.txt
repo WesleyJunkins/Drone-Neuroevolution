@@ -1,0 +1,14 @@
+# Python dependencies for the entire wesDroneRL2 pipeline
+# (Receivers, Data/prepare_data.py + clean_data.py, NE_Framework, Analysis).
+# Install with:  python3 -m pip install -r requirements.txt
+#
+# Note: the supplementary experiment scripts (NE_Framework/exp_*.py) also import
+# google.colab when run on Google Colab — that is provided by the Colab runtime
+# and is intentionally NOT listed here (it is not needed for local runs).
+
+numpy>=1.24.0
+scipy>=1.7.0
+pandas>=1.3.0
+matplotlib>=3.0.0
+torch>=2.0.0
+neat-python>=0.92

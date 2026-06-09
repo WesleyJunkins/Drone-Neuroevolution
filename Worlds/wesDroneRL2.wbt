@@ -1,0 +1,50 @@
+#VRML_SIM R2025a utf8
+
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/backgrounds/protos/TexturedBackground.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/backgrounds/protos/TexturedBackgroundLight.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/robots/bitcraze/crazyflie/protos/Crazyflie.proto"
+
+WorldInfo {
+}
+Viewpoint {
+  orientation 5.388888066985694e-05 -0.9999999862123938 -0.00015707068688631983 5.564886404818943
+  position -4.772228180108332 0.05047959093906821 3.662293611142769
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+Crazyflie {
+  translation 0 0 0
+  controller "all_controller"
+  supervisor TRUE
+  extensionSlot [
+    Camera {
+      rotation 0 1 0 1.5708
+      name "down_camera"
+    }
+  ]
+}
+Solid {
+  translation 0 -2.85 -0.02
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+        }
+        texture ImageTexture {
+          url [
+            "../assets/circle.png"
+          ]
+        }
+      }
+      geometry Box {
+        size 8 8 0.01
+      }
+    }
+  ]
+  name "ground"
+  boundingObject Box {
+    size 8 8 0.01
+  }
+}
