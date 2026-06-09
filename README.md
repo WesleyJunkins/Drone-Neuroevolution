@@ -15,7 +15,7 @@ Three folders are too large for GitHub — the pilot dataset, the trained models
 The repository contains all of the **code**, the Webots world, the track texture, and the
 analysis program. The three **large data folders** are not in the repository; they live on Box.
 
-**Box download:** `<ADD BOX LINK HERE>`
+**Box download:** `https://alabama.box.com/s/tyrma6kgpjyc2csjkoiecxs1ipj9oaqm`
 
 Download the folders from Box and place them inside `Data/` so the layout becomes
 `Data/datasets/`, `Data/model_data/`, and `Data/ALL_FINAL_ERROR_RESULTS/`.
